@@ -182,7 +182,7 @@ vimfx.addKeyOverrides(
 	]
 )
 vimfx.addKeyOverrides(
-	[ location => location.hostname === 'github.com' && location.pathname === '/tpope/vim-speeddating/issues',
+	[ location => location.hostname === 'github.com' && location.pathname.includes('issues') === true,
 		[
 			'c', 'u', 'l', 'm', 'a', 'r', 'o'
 		]
