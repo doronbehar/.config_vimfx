@@ -195,3 +195,33 @@ vimfx.addKeyOverrides(
 		]
 	]
 )
+vimfx.addKeyOverrides(
+	[ location => location.hostname === 'gitlab.com',
+		[
+			'n', 's', 'f', '?', 'T', 'A', 'P', 'I', 'M', 'G', 'L', 'S',
+			'g', 't', 'i',
+			'y'
+		]
+	]
+)
+vimfx.addKeyOverrides(
+	[ location => location.hostname === 'gitlab.com' && location.pathname.includes('network') === true,
+		[
+			'h', 'l', 'k', 'j', 'K', 'J',
+		]
+	]
+)
+vimfx.addKeyOverrides(
+	[ location => location.hostname === 'gitlab.com' && location.pathname.includes('issues') === true,
+		[
+			'a'. 'm', 'r', 'e', 'l'
+		]
+	]
+)
+vimfx.addKeyOverrides(
+	[ location => location.hostname === 'gitlab.com' && location.pathname.includes('merge_requests') === true,
+		[
+			'a'. 'm', 'r', 'e', 'l'
+		]
+	]
+)
