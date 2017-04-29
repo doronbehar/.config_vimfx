@@ -1,7 +1,7 @@
-vimfx.set('hints.chars', 'asdfghjklwerqcnm')
+vimfx.set('hints.chars', 'asdfghjklwerqcnm');
 
 vimfx.addKeyOverrides(
-	[ location => location.hostname === 'google.com',
+	[ location => location.hostname === 'www.google.com' || location.hostname == 'www.google.co.il',
 		[
 			'1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
 			'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
@@ -207,21 +207,21 @@ vimfx.addKeyOverrides(
 vimfx.addKeyOverrides(
 	[ location => location.hostname === 'gitlab.com' && location.pathname.includes('network') === true,
 		[
-			'h', 'l', 'k', 'j', 'K', 'J',
+			'h', 'l', 'k', 'j', 'K', 'J'
 		]
 	]
 )
 vimfx.addKeyOverrides(
 	[ location => location.hostname === 'gitlab.com' && location.pathname.includes('issues') === true,
 		[
-			'a'. 'm', 'r', 'e', 'l'
+			'a', 'm', 'r', 'e', 'l'
 		]
 	]
 )
 vimfx.addKeyOverrides(
 	[ location => location.hostname === 'gitlab.com' && location.pathname.includes('merge_requests') === true,
 		[
-			'a'. 'm', 'r', 'e', 'l'
+			'a', 'm', 'r', 'e', 'l'
 		]
 	]
 )
