@@ -1,16 +1,6 @@
 vimfx.set('hints.chars', 'asdfghjklwerqcnm');
 
 vimfx.addKeyOverrides(
-	[ location => location.hostname === 'www.google.com' || location.hostname == 'www.google.co.il',
-		[
-			'1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
-			'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
-			'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',
-			'z', 'x', 'c', 'v', 'b', 'n', 'm'
-		]
-	]
-)
-vimfx.addKeyOverrides(
 	[ location => location.hostname === 'mail.google.com',
 		[
 			'!', '#', '*', '.', '/', ':', ';', '?',
